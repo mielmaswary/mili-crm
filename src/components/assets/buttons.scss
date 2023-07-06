@@ -1,0 +1,93 @@
+/*buttons*/
+.btn {
+  border: none;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  cursor: pointer;
+  margin: 5px;
+}
+
+.rounded-btn {
+  @extend .btn;
+  border-radius: 50px;
+  width: 140px;
+  height: 35px;
+  padding: 8px 25px;
+  color: white;
+}
+.rounded-btn-blue {
+  @extend .rounded-btn;
+  background-color: #2400ff;
+  color: white;
+}
+.rounded-btn-black {
+  @extend .rounded-btn;
+  background-color: #000000;
+  color: white;
+}
+
+.light-rounded-btn {
+  @extend .btn;
+  border-radius: 8px;
+  width: 130px;
+  height: 45px;
+}
+
+.light-rounded-btn-blue {
+  @extend .light-rounded-btn;
+  background-color: #2400ff;
+}
+.light-rounded-btn-black {
+  @extend .light-rounded-btn;
+  background-color: #211f1f;
+  color: white;
+}
+.light-rounded-btn-green {
+  @extend .light-rounded-btn;
+  background-color: #17ff03;
+}
+.light-rounded-btn-light-green {
+  @extend .light-rounded-btn;
+  background-color: #55dae4b1;
+}
+.light-rounded-btn-turquoise {
+  @extend .light-rounded-btn;
+  background-color: turquoise;
+  color: white;
+}
+.light-rounded-btn-light-grey {
+  @extend .light-rounded-btn;
+  background-color: rgba(255, 255, 255, 0.51);
+}
+.light-rounded-btn-blue {
+  @extend .light-rounded-btn;
+  background-color: rgba(6, 6, 46, 0.868);
+  color: #ffffff;
+}
+
+.light-rounded-small-btn {
+  @extend .btn;
+  border-radius: 2px;
+  width: 80px;
+  height: 15px;
+  opacity: 0.8;
+}
+.light-rounded-small-btn-green {
+  @extend .light-rounded-small-btn;
+  background-color: #5b8857;
+  color: white;
+}
+.light-rounded-small-btn-light-green {
+  @extend .light-rounded-small-btn;
+  background-color: #55dae4b1;
+  color: white;
+}
+.light-rounded-small-btn-light-grey {
+  @extend .light-rounded-small-btn;
+  background-color: rgba(218, 210, 210, 0.797);
+}
