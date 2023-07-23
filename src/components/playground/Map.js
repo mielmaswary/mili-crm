@@ -43,7 +43,7 @@ const Map = () => {
     {
       id: 8,
       title: "Link 8",
-      dropdownItems: ["Dropdown Item 1", "Dropdown Item 2", "Dropdown Item 3"],
+      // dropdownItems: ["Dropdown Item 1", "Dropdown Item 2", "Dropdown Item 3"],
     },
   ];
 
@@ -95,6 +95,7 @@ const Map = () => {
   const handleDropdownItemNotHovered = () => {
     setHoveredDropdownItemIndex(-1);
   };
+  
   const navbarElements = navbarData.map((el, i) => (
     <div
       onMouseEnter={() => handleMouseEnter(i + 1)}
@@ -122,6 +123,7 @@ const Map = () => {
       )}
     </div>
   ));
+
   return <div style={styles.navbar}>{navbarElements}</div>;
 };
 

@@ -31,7 +31,7 @@ function App() {
   const [english, setenglish] = useState(false);
   return !isLoading ? (
     <div style={{ height: "100vh" }} className="app">
-      {/* <AppContext.Provider
+      <AppContext.Provider
         value={{
           data: data.products,
           isLoading,
@@ -54,8 +54,8 @@ function App() {
             <Route path="/projects" />
           </Routes>
         </Router>
-      </AppContext.Provider> */}
-      <Map />
+      </AppContext.Provider>
+      {/* <Map /> */}
     </div>
   ) : (
     <Loader />
